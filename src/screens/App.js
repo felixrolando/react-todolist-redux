@@ -1,5 +1,13 @@
 import { Sidebar, Header } from "../components";
 import { SidebarContent, Ul, Nav, Li } from "../components/SidebarContent";
+import {
+  FiSun,
+  FiStar,
+  FiCalendar,
+  FiUser,
+  FiFlag,
+  FiHome,
+} from "react-icons/fi";
 
 export const App = () => {
   return (
@@ -11,12 +19,30 @@ export const App = () => {
         <SidebarContent>
           <Nav>
             <Ul>
-              <Li>My Day</Li>
-              <Li>Important</Li>
-              <Li>Planned</Li>
-              <Li>Assigned to me</Li>
-              <Li>Flagged email</Li>
-              <Li>Tasks</Li>
+              <Li>
+                <FiSun />
+                My Day
+              </Li>
+              <Li>
+                <FiStar />
+                Important
+              </Li>
+              <Li>
+                <FiCalendar />
+                Planned
+              </Li>
+              <Li>
+                <FiUser />
+                Assigned to me
+              </Li>
+              <Li>
+                <FiFlag />
+                Flagged email
+              </Li>
+              <Li>
+                <FiHome />
+                Tasks
+              </Li>
             </Ul>
           </Nav>
         </SidebarContent>
