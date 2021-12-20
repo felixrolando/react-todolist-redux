@@ -1,5 +1,11 @@
 import { Sidebar, Header } from "../components";
-import { SidebarContent, Ul, Nav, Li } from "../components/SidebarContent";
+import {
+  SidebarContent,
+  Ul,
+  Nav,
+  Li,
+  WrapperLi,
+} from "../components/SidebarContent";
 import {
   FiSun,
   FiStar,
@@ -11,7 +17,7 @@ import {
 
 export const App = () => {
   return (
-    <div>
+    <div style={{ height: "100vh" }}>
       <Header>
         <h1 style={{ color: "white" }}>To Do</h1>
       </Header>
@@ -19,30 +25,30 @@ export const App = () => {
         <SidebarContent>
           <Nav>
             <Ul>
-              <Li>
+              <WrapperLi>
                 <FiSun />
-                My Day
-              </Li>
-              <Li>
+                <Li>My Day</Li>
+              </WrapperLi>
+              <WrapperLi>
                 <FiStar />
-                Important
-              </Li>
-              <Li>
+                <Li>Important</Li>
+              </WrapperLi>
+              <WrapperLi>
                 <FiCalendar />
-                Planned
-              </Li>
-              <Li>
+                <Li>Planned</Li>
+              </WrapperLi>
+              <WrapperLi>
                 <FiUser />
-                Assigned to me
-              </Li>
-              <Li>
+                <Li>Assigned to me</Li>
+              </WrapperLi>
+              <WrapperLi>
                 <FiFlag />
-                Flagged email
-              </Li>
-              <Li>
+                <Li>Flagged email</Li>
+              </WrapperLi>
+              <WrapperLi>
                 <FiHome />
-                Tasks
-              </Li>
+                <Li>Tasks</Li>
+              </WrapperLi>
             </Ul>
           </Nav>
         </SidebarContent>
